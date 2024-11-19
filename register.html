@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FindIT_Register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	//<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon1.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="formbg">
+	<div class="full-container">
+		<p class="heading" style="color: white">FindIT</p>
+		<div class="top">
+			<div class="formWindow" id="userRegisterWindow">
+				<form action="index.php" method="post">
+					<p class="label"><span><b>First Name</b></span> <input class="userFormInput" type="text" name="FirstName" placeholder="Enter First Name" id="fname" required=""></p>
+					<p class="label"><span><b>Last Name</b></span> <input class="userFormInput" type="text" name="LastName" placeholder="Enter Last Name" id="lname" required=""></p>
+					<p class="label"><span><b>Email</b></span> <input  class="userFormInput" type="email" name="Email" placeholder="Enter Email" id="email" onblur="return checkmail();" required=""></p>
+					<p class="label"><span><b>Mobile</b> </span><input class="userFormInput" type="text" name="Mobile" placeholder="Enter Mobile Number" id="mob" required=""></p>
+					<p class="label"><span><b>Password</b></span> <input class="userFormInput" type="password" name="Password" placeholder="Enter Password" id="p1" required=""></p>
+					<p class="formText"><input type="submit" name="register" class="yellowBtn" value="Sign Up"></a></p>
+					<b>
+					<p class="formText">Already have an account? Click to <a href=userlogin.html style="text-decoration: none; color:rgb(56, 6, 56)">Log in</a></p>
+					<p class="formText">By signing up, you agree to our <font color=navy>Terms and Conditions.</font></p>
+				</b>				
+				</form>	
+			</div>
+		</div>		
+	</div>
+</body>
+<script type="text/javascript" src="js/validation.js">
+</script>
+</html>
